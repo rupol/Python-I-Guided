@@ -1,3 +1,5 @@
+from category import Category
+
 class Store:
     # attributes: name, categories (departments)
     # constructor function __init__
@@ -10,7 +12,7 @@ class Store:
         output = f"Welcome to {self.name}!"
 
         i = 1
-
+        # this shows the compositional relationship between Store and Category
         for category in self.categories:
             output += f'\n {i}. {category}'
             i +=1

@@ -1,7 +1,12 @@
 from store import Store
 from category import Category
+from product import Sneaker
+from product import SoccerBall
 
-running_category = Category("Running", "All your running needs", [])
+nike_free = Sneaker("Nike Free", "100", "10", "Nike")
+soccer_ball = SoccerBall("Wilson", "20", "Rubber")
+
+running_category = Category("Running", "All your running needs", [nike_free])
 baseball_category = Category("Baseball", "Rockies Fans only", [])
 basketball_category = Category("Basketball", "Indoor and outdoor products", [])
 football_category = Category("Football", "Are you ready for it?", [])
